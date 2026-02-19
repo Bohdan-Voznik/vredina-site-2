@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Arnold Bode im crossmedialen Viewport – minimalistische Landingpage mit Timeline und Galerie."
+    />
+    <title>Arnold Bode im crossmedialen Viewport</title>
+
+    <!-- Google Font (aus CFG) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <!-- HERO -->
+    <div class="hero" role="banner">
+      <div class="container">
+        <section class="hero__inner">
+          <div>
+            <p class="hero__subtitle">Crossmedialer Viewport</p>
+            <h1 class="hero__title">
+              Arnold Bode
+              <span>im crossmedialen Viewpor </span>
+            </h1>
+          </div>
+
+          <img class="hero__image" src="img/mark.webp" alt="Mark image" />
+        </section>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="navigation">
+          <p class="navigation__logo">
+            <a href="#">Arnold Bode</a>
+          </p>
+          <ul class="navigation__links">
+            <li>
+              <a href="#about">Über</a>
+            </li>
+            <li>
+              <a href="#timeline">Timeline</a>
+            </li>
+            <li>
+              <a href="#gallery">Galerie</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+      <!-- ABOUT -->
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container">
+          <header class="section__header">
+            <h2 id="about-title" class="section__title">
+              Wer ist Arnold Bode?
+            </h2>
+          </header>
+          <article>
+            <p class="about__text">
+              Arnold Bode (1900–1977) war ein deutscher Maler, Zeichner und vor
+              allem ein prägender Ausstellungsgestalter aus Kassel. Nach seiner
+              Ausbildung in Malerei und Grafik an der Kunstakademie Kassel
+              (1919–1924) entwickelte er sich zu einem Motor des kulturellen
+              Neuanfangs nach 1945. Sein bekanntestes Vermächtnis ist die
+              documenta: 1955 initiierte er in Kassel die erste Ausgabe – als
+              sichtbares Aufblenden der Moderne nach den verlorenen Jahren der
+              NS-Zeit. Die documenta wurde parallel zur Bundesgartenschau 1955
+              im Fridericianum gezeigt und war ein großer Erfolg. Bode prägte
+              nicht nur die Idee, sondern auch die Inszenierung: Für die erste
+              documenta gestaltete er die Räume der Fridericianum-Ruine mit weiß
+              gekalkten Wänden, schwarz/weißen, raumhohen Plastikplanen und
+              Heraklith-Verkleidungen – eine reduzierte, klare Bühne für Kunst.
+              Als Ausstellungsleiter verantwortete er später die documenta II
+              (1959) und documenta III (1964).
+            </p>
+            <div class="about__image">
+              <img
+                src="img/about.webp"
+                alt="Porträt von Arnold Bode"
+                loading="lazy"
+              />
+              <p>
+                Visionär: Arnold Bode schenkte Kassel mit der Erfindung der
+                documenta ein Weltereignis. ©Archiv
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- TIMELINE -->
+      <section
+        id="timeline"
+        class="section section--alt"
+        aria-labelledby="timeline-title"
+      >
+        <div class="container">
+          <header class="section__header section__header--row">
+            <h2 id="timeline-title" class="section__title">Timeline</h2>
+          </header>
+
+          <div class="timeline">
+            <img
+              class="timeline__image"
+              src="img/timeline.webp"
+              alt="Timeline image"
+            />
+            <ul class="timeline__list" role="list">
+              <li class="timeline__item">
+                <span class="timeline__date">23.12.1900</span>
+                <span class="timeline__text">Geburt in Kassel</span>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__date">1919–1924</span>
+                <span class="timeline__text">
+                  Studium Malerei und Grafik an der Kunstakademie Kassel
+                </span>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__date">15.07.–18.09.1955</span>
+                <span class="timeline__text">
+                  documenta 1 im Fridericianum (Kassel) – Bode als Initiator und
+                  Ausstellungsgestalter
+                </span>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__date">1959</span>
+                <span class="timeline__text">
+                  documenta II – Bode als Ausstellungsleiter
+                </span>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__date">1964</span>
+                <span class="timeline__text">
+                  documenta III – Bode als Ausstellungsleiter
+                </span>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__date">03.10.1977</span>
+                <span class="timeline__text">
+                  Tod in Kassel (einen Tag nach dem Ende der documenta 6)
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY (ohne Vergrößerung) -->
+      <section id="gallery" class="section" aria-labelledby="gallery-title">
+        <div class="container">
+          <header class="section__header section__header--row">
+            <h2 id="gallery-title" class="section__title">Galerie</h2>
+          </header>
+
+          <div class="gallery" role="list">
+            <figure class="gallery__item" role="listitem">
+              <img
+                src="img/01.webp"
+                alt="Platzhalterbild 1 – Bode-inspirierte Fläche und Kontrast"
+                loading="lazy"
+              />
+              <figcaption>
+                <span> Platzhalterbild 1</span>
+                Bode-inspirierte Fläche und Kontrast
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__item" role="listitem">
+              <img
+                src="img/02.webp"
+                alt="Platzhalterbild 2 – Raster und Struktur"
+                loading="lazy"
+              />
+              <figcaption>
+                <span> Platzhalterbild 2</span>
+                Raster und Struktur
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__item" role="listitem">
+              <img
+                src="img/03.webp"
+                alt="Platzhalterbild 3 – reduzierte Bühne"
+                loading="lazy"
+              />
+              <figcaption>
+                <span> Platzhalterbild 3</span>
+                Reduzierte Bühne
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__item" role="listitem">
+              <img
+                src="img/04.webp"
+                alt="Platzhalterbild 4 – Schwarz/Weiß-Drapierung"
+                loading="lazy"
+              />
+              <figcaption>
+                <span> Platzhalterbild 4</span>
+                Schwarz/Weiß-Drapierung
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__item" role="listitem">
+              <img
+                src="img/05.webp"
+                alt="Platzhalterbild 5 – Licht und Raum"
+                loading="lazy"
+              />
+              <figcaption>
+                <span> Platzhalterbild 5</span>
+                Licht und Raum
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__item" role="listitem">
+              <img
+                src="img/06.webp"
+                alt="Platzhalterbild 6 – Kassel / Fridericianum-Anmutung"
+                loading="lazy"
+              />
+              <figcaption>
+                <span> Platzhalterbild 6</span>
+                Kassel / Fridericianum-Anmutung
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p class="footer__meta">© documenta archiv, Kassel</p>
+      </div>
+    </footer>
+  </body>
+</html>
